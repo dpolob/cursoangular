@@ -1,0 +1,6 @@
+<div [ngStyle]="{'background':color ? color:'red'}">Texto con fondo {{color}}</div>
+<button (click) = "color = 'yellow'" [ngClass]="{'activoyellow' : color == 'yellow'}">Amarillo</button>
+<button (click) = "color = 'blue'" [ngClass]="{'activoblue' : color == 'blue'}">Azul</button>
+<button (click) = "color = 'purple'" [ngClass]="{'activopurple' : color == 'purple'}">Morado</button>
+<!--comentario......-->
+<app-libros></app-libros>

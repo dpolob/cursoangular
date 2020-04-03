@@ -1,0 +1,15 @@
+.yellow{
+    background: yellow;
+}
+.activoyellow{
+    background: yellow;
+    color: white
+}
+.activoblue{
+    background: blue;
+    color: white
+}
+.activopurple{
+    background: purple;
+    color: white
+}
