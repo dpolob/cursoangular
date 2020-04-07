@@ -9,6 +9,7 @@ export class ConfirmComponent implements OnInit {
 
   isDisabled: boolean;
   showModal: boolean;
+  showBlock: string;
   
   
   constructor() { 
@@ -21,6 +22,7 @@ export class ConfirmComponent implements OnInit {
 
   botonPulsado(){
     this.showModal=true;
+    this.showBlock="block";
   }
   
 
