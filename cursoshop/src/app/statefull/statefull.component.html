@@ -7,11 +7,20 @@
 
       <div class="card-deck">
         <div class="card" *ngFor="let curso of shopModel.shopItems">
-          <app-stateless [producto]="curso"></app-stateless>
+          <app-stateless 
+            [producto]="curso"
+            (cursomatriculado)="cursoMatriculado($event)"></app-stateless>
         </div>
       </div>
     </div>
-    <ul class="list-group">
-      <li class="list-group-item" *ngFor="let boughtItem of boughtItems">{{boughtItem.title}}</li>
-    </ul>
+    <div *ngIf="boughtItems">
+      <ul class="list-group">
+        <li class="list-group-item" >Informacion matricula</li>
+        <li class="list-group-item" *ngFor="let boughtItem of boughtItems">
+          {{boughtItem.title}}   <span class="badge badge-secondary">{{boughtItem.price}} €</span>
+        </li>
+        <li class="list-group-item"><h3>Total: {{total}} €</h3></li>
+      </ul>
+    </div>
+    <app-confirm></app-confirm>
   </main><!-- /.container -->

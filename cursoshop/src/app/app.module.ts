@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StatefullComponent } from './statefull/statefull.component';
 import { StatelessComponent } from './stateless/stateless.component';
+import { ConfirmComponent } from './confirm/confirm.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StatefullComponent,
-    StatelessComponent
+    StatelessComponent,
+    ConfirmComponent
   ],
   imports: [
     BrowserModule,
