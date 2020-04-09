@@ -1,5 +1,5 @@
 <div class="card-body">
-    <img class="card-img-top" src="{{producto.picture}}" alt="{{producto.title}}">
+    <img (contextmenu)="mensaje()" class="card-img-top" src="{{producto.picture}}" alt="{{producto.title}}">
     <h5 class="card-title">{{producto.title}}</h5>
     <p class="card-text">{{producto.desc}}</p>
     <p class="card-text">Precio: {{producto.price}}€</p>

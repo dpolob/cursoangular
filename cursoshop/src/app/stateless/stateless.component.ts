@@ -27,4 +27,8 @@ export class StatelessComponent implements OnInit {
     this.matricula="Ya esta matriculado";
     this.cursomatriculado.emit(this.producto);
   }
+
+  mensaje(){
+    alert("No descargues imagenes");
+  }
 }
